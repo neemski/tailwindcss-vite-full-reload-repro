@@ -1,0 +1,24 @@
+{
+  "name": "tailwindcss-vite-full-reload-repro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.2.4",
+    "@types/react": "19.2.1",
+    "@types/react-dom": "19.2.1",
+    "@vitejs/plugin-react-swc": "4.3.0",
+    "tailwindcss": "4.2.4",
+    "typescript": "5.6.2",
+    "vite": "8.0.11"
+  }
+}
