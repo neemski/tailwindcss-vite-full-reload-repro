@@ -26,7 +26,7 @@ export function App() {
         className="rounded bg-slate-300 px-4 py-2 text-slate-800"
         onClick={() => setOnRouteB(true)}
       >
-        go to route B (fetches its chunk)
+        go to route B (fetches its chunk, which will get HMR working)
       </button>
       {onRouteB ? (
         <Suspense fallback={null}>
@@ -34,9 +34,7 @@ export function App() {
         </Suspense>
       ) : null}
       <p className="max-w-md text-center text-sm text-slate-500">
-        If the count resets to 0 after an edit, the page fully reloaded. Edit
-        DeepComponent before navigating to route B to see it; navigate first,
-        then edit, and HMR works.
+        If the count resets to 0 after an edit, the page fully reloaded.
       </p>
     </main>
   );
